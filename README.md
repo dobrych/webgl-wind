@@ -25,6 +25,9 @@ npm start
 
 ### Downloading weather data
 
-1. Install [GRIB-API](https://software.ecmwf.int/wiki/display/GRIB/Releases).
-2. Edit constants in `data/download.sh` for desired date, time and resolution.
-3. Run `./data/download.sh <dir>` to generate wind data files (`png` and `json`) for use with the library.
+1. Signup for an API key at [Planet OS](https://data.planetos.com/plans) (free plan)
+2. Run:
+    * `npm install`
+    * `cd data`
+    * `node prepare.js <your API key>` (wait for data to get downloaded)
+3. Move pre-rendered PNG and JSON files into the `demo` folder – `mv *.json *.png ../demo`

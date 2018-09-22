@@ -37,5 +37,9 @@
       "no-var": 2,
       "prefer-const": 2
     }
+  },
+  "dependencies": {
+    "d3-scale": "^2.1.2",
+    "request": "^2.88.0"
   }
 }
